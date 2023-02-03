@@ -43,7 +43,7 @@ dependencies:
   hive: ^2.2.3
   uni_links: ^0.5.1
   google_maps_flutter: ^2.2.0
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

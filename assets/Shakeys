@@ -1,0 +1,48 @@
+ https://github.com/spotify/android-sdk/releases/tag/v0.7.2-appremote_v1.2.3-auth
+
+ SHA1: 37:15:62:7D:39:ED:AE:06:E3:9B:0A:E7:22:57:2D:1F:6D:AB:EA:C9
+         SHA256: EA:D5:05:64:8C:21:B8:73:D4:56:7A:6B:20:51:EF:0D:AE:87:C8:B2:E2:93:5D:66:A1:2B:3D:C1:EB:27:7E:DF
+
+         https://stackoverflow.com/questions/51845559/generate-sha-1-for-flutter-react-native-android-native-app
+
+        novusaltair@Novuss-MacBook-Air testing % keytool -alias androiddebugkey -keystore ~/.android/debug.keystore -list -v | grep SHA1
+         Enter keystore password:  123456
+         novusaltair@Novuss-MacBook-Air testing % ./gradlew signingReport
+         zsh: no such file or directory: ./gradlew
+         novusaltair@Novuss-MacBook-Air testing % ls
+         README.md               analysis_options.yaml   android                 assets                  ios                     lib                     pubspec.lock            pubspec.yaml            test
+         novusaltair@Novuss-MacBook-Air testing % cd android
+         novusaltair@Novuss-MacBook-Air android % ./gradlew signingReport
+         zsh: no such file or directory: ./gradlew
+         novusaltair@Novuss-MacBook-Air android % gradlew signingReport
+         zsh: command not found: gradlew
+         novusaltair@Novuss-MacBook-Air android % ls
+         app                     build.gradle            gradle                  gradle.properties       local.properties        settings.gradle         spotify-app-remote
+         novusaltair@Novuss-MacBook-Air android % cd gradle
+         novusaltair@Novuss-MacBook-Air gradle % ls
+         wrapper
+         novusaltair@Novuss-MacBook-Air gradle % cls
+         zsh: command not found: cls
+         novusaltair@Novuss-MacBook-Air gradle % keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+         Alias name: androiddebugkey
+         Creation date: 13-Aug-2022
+         Entry type: PrivateKeyEntry
+         Certificate chain length: 1
+         Certificate[1]:
+         Owner: C=US, O=Android, CN=Android Debug
+         Issuer: C=US, O=Android, CN=Android Debug
+         Serial number: 1
+         Valid from: Sat Aug 13 12:04:54 PKT 2022 until: Mon Aug 05 12:04:54 PKT 2052
+         Certificate fingerprints:
+                  SHA1: 37:15:62:7D:39:ED:AE:06:E3:9B:0A:E7:22:57:2D:1F:6D:AB:EA:C9
+                  SHA256: EA:D5:05:64:8C:21:B8:73:D4:56:7A:6B:20:51:EF:0D:AE:87:C8:B2:E2:93:5D:66:A1:2B:3D:C1:EB:27:7E:DF
+         Signature algorithm name: SHA1withRSA (weak)
+         Subject Public Key Algorithm: 2048-bit RSA key
+         Version: 1
+
+         Warning:
+         The certificate uses the SHA1withRSA signature algorithm which is considered a security risk.
+         novusaltair@Novuss-MacBook-Air gradle %
+
+
+
